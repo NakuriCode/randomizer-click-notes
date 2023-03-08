@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from 'react';
-import { NewWindow } from 'react-window-open';
 import { RandomizerType } from '../types/randomizer';
+import NewWindow from 'react-new-window';
+import FF4FEShopClicker from '../windows/ff4fe-shop-clicker';
 
 export default function StartPage(): ReactElement {
   const [isNoteClickerOpen, setIsNoteClickerOpen] = useState(false);
@@ -20,14 +21,8 @@ export default function StartPage(): ReactElement {
         Open FF4FE Shop Note Clicker
       </div>
       {isNoteClickerOpen && (
-        <NewWindow
-          top={200}
-          left={200}
-          width={400}
-          height={700}
-          onClose={() => setIsNoteClickerOpen(false)}
-        >
-          <p>Hello!</p>
+        <NewWindow copyStyles onUnload={() => setIsNoteClickerOpen(false)}>
+          <FF4FEShopClicker />
         </NewWindow>
       )}
     </div>
