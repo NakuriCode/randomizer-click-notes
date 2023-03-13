@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'FF4-Font';
+  src: url('../../public/fonts/ff4-font.otf');
+  font-weight: 400;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -11,4 +17,8 @@ body {
 #root {
   width: 100%;
   height: 100%;
+}
+
+* {
+  font-family: FF4-Font;
 }
