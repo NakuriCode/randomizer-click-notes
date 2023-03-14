@@ -1,30 +1,18 @@
-# Getting Started with Create React App
+# Randomizer Note Clicker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### By Nakuri
 
-## Available Scripts
+This app allows you to take quick small notes entirely controllable by clicking/touch. This app is designed around specific Randomizers and use-cases such as for example FF4FE (Final Fantasy 4 Free Enterprise). For the initial release, it only supports Shop Tracking for FF4FE, but will be probably expanded to also support for example Entrance Notes for ALttPR Entrance Shuffle.
 
-In the project directory, you can run:
+### How to Use
 
-### `npm start`
+Open the app under the following url: [Randomizer Note Clicker](http://noteclicker-nakuri.com/) and select the Rando Note Clicker you wish to use. A popout window will appear and you can close the original page from which you launched the app. You can now use the Note Clicker to create your notes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Restrictions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This app is currently still in development and testing. So far it has been working under Chromium Browsers, as well as Firefox and Android. Safari on MacOS might block all popups, so you might have to adjust your settings to allow them for this website. The Randomizer Note Clicker works on mobile, but it's not officially supported, especially on older phones with smaller viewports.
 
-### `npm test`
+### Questions?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please contact me on Discord under the following tag: Nakuri#5176
+Optimally, you let me know in your first message that you're contacting me regarding the Randomizer Note Clicker.
