@@ -16,35 +16,6 @@ export const FF4ItemData = [
     ]
   },
   {
-    name: 'Status Effect(Positive)',
-    icon: Icons.BuffIcon,
-    items: [
-      { name: 'Bacchus' },
-      { name: 'Hermes' },
-      { name: 'Illusion' },
-      { name: 'MoonVeil' },
-      { name: 'StarVeil' }
-    ]
-  },
-  {
-    name: 'Status Effect(Negative)',
-    icon: Icons.HourglassIcon,
-    items: [
-      { name: 'Bestiary' },
-      { name: 'Coffin' },
-      { name: 'HrGlass1' },
-      { name: 'HrGlass2' },
-      { name: 'HrGlass3' },
-      { name: 'MuteBell' },
-      { name: 'Silkweb' }
-    ]
-  },
-  {
-    name: 'Camping Gear',
-    icon: Icons.CampingIcon,
-    items: [{ name: 'Tent' }, { name: 'Cabin' }]
-  },
-  {
     name: 'Status Removal Items',
     icon: Icons.RemedyIcon,
     items: [
@@ -60,6 +31,37 @@ export const FF4ItemData = [
       { name: 'Unihorn' }
     ]
   },
+  {
+    name: 'Camping Gear',
+    icon: Icons.CampingIcon,
+    items: [{ name: 'Tent' }, { name: 'Cabin' }]
+  },
+  {
+    name: 'Beneficial(Other)',
+    icon: Icons.BuffIcon,
+    items: [
+      { name: 'Siren' },
+      { name: 'Bestiary' },
+      { name: 'Bacchus' },
+      { name: 'Hermes' },
+      { name: 'Illusion' },
+      { name: 'MoonVeil' },
+      { name: 'StarVeil' }
+    ]
+  },
+  {
+    name: 'Status Effect(Negative)',
+    icon: Icons.HourglassIcon,
+    items: [
+      { name: 'Coffin' },
+      { name: 'HrGlass1' },
+      { name: 'HrGlass2' },
+      { name: 'HrGlass3' },
+      { name: 'MuteBell' },
+      { name: 'Silkweb' }
+    ]
+  },
+
   {
     name: 'Damaging Items',
     icon: Icons.BombIcon,
@@ -119,7 +121,7 @@ export const FF4ItemData = [
   {
     name: 'Holy Swords',
     icon: Icons.HolySwordIcon,
-    items: [{ name: 'Light' }, { name: 'Excalibur' }, { name: 'Crystal' }]
+    items: [{ name: 'Light' }, { name: 'Excalbur' }, { name: 'Crystal' }]
   },
   {
     name: 'Ninja Swords',

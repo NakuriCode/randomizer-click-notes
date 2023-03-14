@@ -7,6 +7,7 @@ export const FF4ShopEntries = [
   { name: 'Toroia', color: 'text-earth-shop' },
   { name: 'Silvera', color: 'text-earth-shop' },
   { name: 'Agart', color: 'text-earth-shop' },
+  { name: 'Eblan', color: 'text-earth-shop' },
   { name: 'Dwarf', color: 'text-underground-shop' },
   { name: 'Tomra', color: 'text-underground-shop' },
   { name: 'Feymarch', color: 'text-underground-shop' },

@@ -4,14 +4,40 @@
 
 @font-face {
   font-family: 'FF4-Font';
-  src: url('../../public/fonts/ff4-font.otf');
+  src: url('../../public/fonts/ff4-font.otf') format('otf'),
+    url('../../public/fonts/ff4-font.woff2') format('woff2'),
+    url('../../public/fonts/ff4-font.woff') format('woff'),
+    url('../../public/fonts/ff4-font.ttf') format('truetype');
   font-weight: 400;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: 'DigitalDisco';
+  src: url('../../public/fonts/DigitalDisco.otf') format('otf'),
+    url('../../public/fonts/DigitalDisco.woff2') format('woff2'),
+    url('../../public/fonts/DigitalDisco.woff') format('woff'),
+    url('../../public/fonts/DigitalDisco.ttf') format('truetype');
+  font-weight: 700;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: 'DigitalDisco';
+  src: url('../../public/fonts/DigitalDisco-Thin.ttf') format('truetype');
+  font-weight: 400;
+  line-height: 1;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
 }
 
 #root {
@@ -21,4 +47,8 @@ body {
 
 * {
   font-family: FF4-Font;
+}
+
+.digital-disco {
+  font-family: DigitalDisco;
 }

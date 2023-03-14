@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { ReactElement, useEffect, useState } from 'react';
 import ItemList from '../components/item-list';
 import ItemTypeContainer from '../components/item-type-container';
@@ -31,10 +32,10 @@ export default function FF4FEShopClicker(): ReactElement {
   }, [noteList]);
 
   return (
-    <div className="bg-gradient-to-b from-black to-[#000035] w-[screen] h-screen flex p-2 gap-2 flex-wrap items-start min-w-[395px] min-h-[700px]">
+    <div className="bg-gradient-to-b from-gradient-gray-light to-gradient-gray-dark w-[screen] h-screen flex p-2 gap-2 flex-wrap items-start min-w-[395px] min-h-[700px]">
       <TrackerTitle />
       <NoteContainer noteList={noteList} editNoteList={setNoteList} />
-      <div className="w-[145px] flex flex-col items-center gap-6 mt-6">
+      <div className="flex-1 max-w-[450px] flex flex-col items-center gap-6 mt-6">
         <ItemTypeContainer
           setItemType={setCurrentItemType}
           openItemList={() => setIsItemListOpen(true)}

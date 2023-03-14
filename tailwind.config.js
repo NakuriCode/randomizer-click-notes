@@ -5,9 +5,12 @@ module.exports = {
     extend: {
       colors: {
         'ff4-blue': '#000063',
+        'ff4-blue-light': '#0000db',
         'earth-shop': '#00ffde',
         'underground-shop': '#ff7e00',
-        'moon-shop': '#ba00ff'
+        'moon-shop': '#ba00ff',
+        'gradient-gray-dark': '#090909',
+        'gradient-gray-light': '#0c1226'
       }
     }
   },
