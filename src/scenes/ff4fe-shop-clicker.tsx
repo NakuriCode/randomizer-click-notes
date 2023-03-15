@@ -8,6 +8,7 @@ import '../styles/globals.css';
 import { FF4ItemFormat, FF4Note } from '../types/ff4-types';
 import { Dimension } from '../types/generic';
 import FF4Border from '../assets/ff4-border.png';
+import adjustMacOsFonts from '../utility/adjustMacOs';
 
 export default function FF4FEShopClicker(): ReactElement {
   const [currentItemType, setCurrentItemType] = useState<FF4ItemFormat>({
@@ -46,7 +47,7 @@ export default function FF4FEShopClicker(): ReactElement {
           className="bg-ff4-blue text-4xl text-white rounded border-4 border-gray-50 py-1 px-2 w-min cursor-pointer"
           onClick={() => setNoteList([])}
         >
-          Reset
+          <p className={adjustMacOsFonts('lg')}>Reset</p>
         </div>
       </div>
       {isItemListOpen && (

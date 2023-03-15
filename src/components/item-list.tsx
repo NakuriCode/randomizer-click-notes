@@ -4,6 +4,7 @@ import { Dimension } from '../types/generic';
 import ShopList from './shop-list';
 import short from 'short-uuid';
 import FF4Border from '../assets/ff4-border.png';
+import adjustMacOsFonts from '../utility/adjustMacOs';
 
 type Props = {
   itemType: FF4ItemFormat;
@@ -58,7 +59,7 @@ export default function ItemList(props: Props): ReactElement {
                 className="flex items-center gap-2 cursor-pointer hover:text-white"
               >
                 <img className="w-3" src={itemType.icon} />
-                <p className="text-3xl leading-[0.85]">{item.name}</p>
+                <p className={`${adjustMacOsFonts('lg')} text-3xl leading-[0.85]`}>{item.name}</p>
               </li>
             ))}
         </ul>

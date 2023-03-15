@@ -3,6 +3,7 @@ import { FF4ShopEntries } from '../data/ff4-shops';
 import { FF4Note } from '../types/ff4-types';
 import short from 'short-uuid';
 import FF4Border from '../assets/ff4-border.png';
+import adjustMacOsFonts from '../utility/adjustMacOs';
 
 type Props = {
   submitNoteEntry(newEntry: FF4Note): void;
@@ -56,7 +57,7 @@ export default function ShopList(props: Props): ReactElement {
               }
               className="flex items-center gap-2 cursor-pointer hover:text-white"
             >
-              <p className="text-3xl leading-[0.85]">{shop.name}</p>
+              <p className={`${adjustMacOsFonts('lg')} text-3xl leading-[0.85]`}>{shop.name}</p>
             </li>
           ))}
         </ul>
