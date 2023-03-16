@@ -10,8 +10,7 @@ export default function IntroText(): ReactElement {
         By Nakuri - v0.9
       </p>
       <p className="digital-disco text-white mb-8 text-lg sm:text-xl text-justify max-[375px]:hidden">
-        Welcome to the Randomizer Note Clicker! The purpose of this little tool is to help you
-        create quick little notes without the need of a keyboard. Just grab your mouse or use touch
+        Create quick little notes without the need of a keyboard. Just grab your mouse or use touch
         to click away and create the notes you need during a Randomizer run.
       </p>
       <h2 className="digital-disco text-2xl font-bold sm:text-3xl text-white mb-4 text-center leading-none">

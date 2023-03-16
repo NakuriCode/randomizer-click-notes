@@ -3,7 +3,7 @@ import React, { ReactElement } from 'react';
 import NakuriFF4Inactive from '../assets/nakuri_i.png';
 import NakuriFF4Active from '../assets/nakuri_t.png';
 import FF4Border from '../assets/ff4-border.gif';
-import adjustMacOsFonts from '../utility/adjustMacOs';
+import adjustLowFontsFonts from '../utility/adjust-low-fonts';
 
 type Props = {
   setIsNoteClickerOpen(open: boolean): void;
@@ -26,7 +26,7 @@ export default function FF4FEButton(props: Props): ReactElement {
         onClick={() => handleClick()}
         className="bg-ff4-blue transition-colors text-white rounded border-[5px] border-gray-50 p-1 cursor-pointer max-[375px]:text-3xl text-4xl uppercase text-center group-hover:bg-ff4-blue-light"
       >
-        <p className={adjustMacOsFonts('sm')}>FF4FE Shop Note Clicker</p>
+        <p className={adjustLowFontsFonts('sm')}>FF4FE Shop Note Clicker</p>
       </div>
     </div>
   );

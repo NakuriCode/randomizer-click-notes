@@ -3,7 +3,7 @@ import { FF4Note } from '../types/ff4-types';
 import short from 'short-uuid';
 import { TrashBinIcon } from '../icons/icons';
 import FF4Border from '../assets/ff4-border.png';
-import adjustMacOsFonts from '../utility/adjustMacOs';
+import adjustLowFontsFonts from '../utility/adjust-low-fonts';
 
 type Props = {
   noteList: FF4Note[];
@@ -30,9 +30,11 @@ export default function NoteContainer(props: Props): ReactElement {
           >
             <div className="flex gap-2 items-center">
               <img className="w-3 h-3" src={note.icon} />
-              <span className={adjustMacOsFonts('sm')}>{note.name}</span>
+              <span className={adjustLowFontsFonts('sm')}>{note.name}</span>
             </div>
-            <span className={`${note.shop.color} ${adjustMacOsFonts('sm')}`}>{note.shop.name}</span>
+            <span className={`${note.shop.color} ${adjustLowFontsFonts('sm')}`}>
+              {note.shop.name}
+            </span>
             <div
               onClick={() => removeItem(note.id)}
               className="absolute top-1/2 -translate-y-[60%] -left-6 w-7 h-7 cursor-pointer"
