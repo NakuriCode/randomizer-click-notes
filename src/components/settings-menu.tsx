@@ -103,7 +103,7 @@ export default function SettingsMenu(props: Props): ReactElement {
         <NewWindow
           url="/ff4fe-shop-clicker"
           title="FF4FE Shop Clicker"
-          features={{ width: isThinMode ? 300 : 400, height: 700 }}
+          features={{ width: isThinMode ? 320 : 400, height: 730 }}
           copyStyles
           onUnload={() => setIsNewNoteClickerOpen(false)}
         />

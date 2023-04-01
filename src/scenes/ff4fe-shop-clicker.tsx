@@ -24,6 +24,9 @@ export default function FF4FEShopClicker(): ReactElement {
     y: 0
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const isThinMode = localStorage.getItem('thinmode') === 'true';
+
   const [noteList, setNoteList] = useState<FF4Note[]>([]);
 
   function submitNoteEntry(newEntry: FF4Note): void {
@@ -35,20 +38,27 @@ export default function FF4FEShopClicker(): ReactElement {
   }, [noteList]);
 
   return (
-    <div className="bg-gradient-to-b from-gradient-gray-light to-gradient-gray-dark w-[screen] h-screen flex p-2 gap-2 flex-wrap items-start">
+    <div
+      className={`bg-gradient-to-b from-gradient-gray-light to-gradient-gray-dark w-[screen] h-screen flex p-2 gap-2 flex-wrap items-start ${
+        isThinMode ? 'min-w-[300px]' : 'min-w-[400px]'
+      } `}
+    >
       <div className="flex gap-2 items-center flex-[1_1_100%]">
         <TrackerTitle />
         <SettingsButton editNoteList={setNoteList} />
       </div>
 
-      <NoteContainer noteList={noteList} editNoteList={setNoteList} />
-      <div className="flex-1 max-w-[470px] h-5/6">
-        <ItemTypeContainer
-          setItemType={setCurrentItemType}
-          openItemList={() => setIsItemListOpen(true)}
-          setItemListPosition={setItemListPosition}
-        />
+      <div className="flex gap-2 h-screen mt-4 min-w-[300px]">
+        <NoteContainer noteList={noteList} editNoteList={setNoteList} />
+        <div className="flex-1 max-w-[230px] h-5/6">
+          <ItemTypeContainer
+            setItemType={setCurrentItemType}
+            openItemList={() => setIsItemListOpen(true)}
+            setItemListPosition={setItemListPosition}
+          />
+        </div>
       </div>
+
       {isItemListOpen && (
         <ItemList
           itemType={currentItemType}

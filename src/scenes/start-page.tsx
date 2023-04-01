@@ -21,7 +21,7 @@ export default function StartPage(): ReactElement {
         <NewWindow
           url="/ff4fe-shop-clicker"
           title="FF4FE Shop Clicker"
-          features={{ width: isThinMode === 'true' ? 300 : 400, height: 700 }}
+          features={{ width: isThinMode === 'true' ? 320 : 400, height: 730 }}
           copyStyles
           onUnload={() => setIsNoteClickerOpen(false)}
         />
