@@ -1,6 +1,10 @@
+import { ItemCategory } from './enum/item-category';
+
 export type FF4ItemFormat = {
   name: string;
   icon: string;
+  category: ItemCategory;
+  flags: string[];
   items: {
     name: string;
   }[];

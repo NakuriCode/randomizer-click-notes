@@ -1,9 +1,12 @@
 import * as Icons from '../icons/icons';
+import { ItemCategory } from '../types/enum/item-category';
 
 export const FF4ItemData = [
   {
     name: 'Potions',
     icon: Icons.PotionIcon,
+    category: ItemCategory.ITEM,
+    flags: [],
     items: [
       { name: 'Cure1' },
       { name: 'Cure2' },
@@ -18,6 +21,8 @@ export const FF4ItemData = [
   {
     name: 'Status Removal Items',
     icon: Icons.RemedyIcon,
+    category: ItemCategory.ITEM,
+    flags: ['j-item'],
     items: [
       { name: 'Alarm' },
       { name: 'Antidote' },
@@ -34,11 +39,15 @@ export const FF4ItemData = [
   {
     name: 'Camping Gear',
     icon: Icons.CampingIcon,
+    category: ItemCategory.ITEM,
+    flags: [],
     items: [{ name: 'Tent' }, { name: 'Cabin' }]
   },
   {
     name: 'Beneficial(Other)',
     icon: Icons.BuffIcon,
+    category: ItemCategory.ITEM,
+    flags: ['j-item'],
     items: [
       { name: 'Siren' },
       { name: 'Bestiary' },
@@ -52,6 +61,8 @@ export const FF4ItemData = [
   {
     name: 'Status Effect(Negative)',
     icon: Icons.HourglassIcon,
+    category: ItemCategory.ITEM,
+    flags: ['j-item'],
     items: [
       { name: 'Coffin' },
       { name: 'HrGlass1' },
@@ -65,6 +76,8 @@ export const FF4ItemData = [
   {
     name: 'Damaging Items',
     icon: Icons.BombIcon,
+    category: ItemCategory.ITEM,
+    flags: ['j-item'],
     items: [
       { name: 'Bomb' },
       { name: 'BigBomb' },
@@ -86,6 +99,8 @@ export const FF4ItemData = [
   {
     name: 'Summons',
     icon: Icons.SummonIcon,
+    category: ItemCategory.ITEM,
+    flags: [],
     items: [
       { name: 'Sylph' },
       { name: 'Asura' },
@@ -97,11 +112,15 @@ export const FF4ItemData = [
   {
     name: 'Daggers',
     icon: Icons.DaggerIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [{ name: 'Silver' }, { name: 'Dancing' }, { name: 'Assassin' }, { name: 'Mute' }]
   },
   {
     name: 'Swords',
     icon: Icons.SwordIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'Ancient' },
       { name: 'Drain' },
@@ -116,16 +135,22 @@ export const FF4ItemData = [
   {
     name: 'Dark Swords',
     icon: Icons.DarkSwordIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [{ name: 'Shadow' }, { name: 'Darkness' }, { name: 'Black' }]
   },
   {
     name: 'Holy Swords',
     icon: Icons.HolySwordIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [{ name: 'Light' }, { name: 'Excalbur' }, { name: 'Crystal' }]
   },
   {
     name: 'Ninja Swords',
     icon: Icons.NinjaIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'Short' },
       { name: 'Middle' },
@@ -138,16 +163,22 @@ export const FF4ItemData = [
   {
     name: 'Boomerangs',
     icon: Icons.BoomerangIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [{ name: 'Boomerang' }, { name: 'FullMoon' }]
   },
   {
     name: 'Dart',
     icon: Icons.DartIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [{ name: 'Shuriken' }, { name: 'Ninja' }]
   },
   {
     name: 'Spears',
     icon: Icons.SpearIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'Spear' },
       { name: 'Wind' },
@@ -162,6 +193,8 @@ export const FF4ItemData = [
   {
     name: 'Bows',
     icon: Icons.BowIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'ShortBow' },
       { name: 'CrossBow' },
@@ -175,6 +208,8 @@ export const FF4ItemData = [
   {
     name: 'Arrows',
     icon: Icons.ArrowIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'Medusa' },
       { name: 'Iron' },
@@ -193,6 +228,8 @@ export const FF4ItemData = [
   {
     name: 'Staves',
     icon: Icons.StaffIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'Staff' },
       { name: 'Cure' },
@@ -206,6 +243,8 @@ export const FF4ItemData = [
   {
     name: 'Rods',
     icon: Icons.RodIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'Rod' },
       { name: 'IceRod' },
@@ -220,6 +259,8 @@ export const FF4ItemData = [
   {
     name: 'Claws',
     icon: Icons.ClawIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'FireClaw' },
       { name: 'IceClaw' },
@@ -232,6 +273,8 @@ export const FF4ItemData = [
   {
     name: 'Axes',
     icon: Icons.AxeIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'HandAxe' },
       { name: 'Dwarf' },
@@ -243,11 +286,15 @@ export const FF4ItemData = [
   {
     name: 'Hammers',
     icon: Icons.HammerIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [{ name: 'Wooden' }, { name: 'Silver' }, { name: 'Earth' }]
   },
   {
     name: 'Whips',
     icon: Icons.WhipIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [
       { name: 'Whip' },
       { name: 'Chain' },
@@ -259,11 +306,15 @@ export const FF4ItemData = [
   {
     name: 'Harps',
     icon: Icons.HarpIcon,
+    category: ItemCategory.WEAPON,
+    flags: [],
     items: [{ name: 'Dreamer' }, { name: 'Charm' }]
   },
   {
     name: 'Shields',
     icon: Icons.ShieldIcon,
+    category: ItemCategory.ARMOR,
+    flags: [],
     items: [
       { name: 'Shadow' },
       { name: 'Black' },
@@ -282,6 +333,8 @@ export const FF4ItemData = [
   {
     name: 'Helmets',
     icon: Icons.HelmetIcon,
+    category: ItemCategory.ARMOR,
+    flags: [],
     items: [
       { name: 'Shadow' },
       { name: 'Darkness' },
@@ -308,6 +361,8 @@ export const FF4ItemData = [
   {
     name: 'Armors',
     icon: Icons.ArmorIcon,
+    category: ItemCategory.ARMOR,
+    flags: [],
     items: [
       { name: 'Shadow' },
       { name: 'Darkness' },
@@ -327,6 +382,8 @@ export const FF4ItemData = [
   {
     name: 'Shirts',
     icon: Icons.ShirtIcon,
+    category: ItemCategory.ARMOR,
+    flags: [],
     items: [
       { name: 'Cloth' },
       { name: 'Prisoner' },
@@ -347,6 +404,8 @@ export const FF4ItemData = [
   {
     name: 'Gauntlets',
     icon: Icons.GauntletIcon,
+    category: ItemCategory.ARMOR,
+    flags: [],
     items: [
       { name: 'Shadow' },
       { name: 'Darkness' },
@@ -363,6 +422,8 @@ export const FF4ItemData = [
   {
     name: 'Rings',
     icon: Icons.RingIcon,
+    category: ItemCategory.ARMOR,
+    flags: [],
     items: [
       { name: 'IronRing' },
       { name: 'RubyRing' },

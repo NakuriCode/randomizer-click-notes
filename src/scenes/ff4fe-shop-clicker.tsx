@@ -8,11 +8,14 @@ import '../styles/globals.css';
 import { FF4ItemFormat, FF4Note } from '../types/ff4-types';
 import { Dimension } from '../types/generic';
 import SettingsButton from '../components/buttons/settings-button';
+import { ItemCategory } from '../types/enum/item-category';
 
 export default function FF4FEShopClicker(): ReactElement {
   const [currentItemType, setCurrentItemType] = useState<FF4ItemFormat>({
     name: '',
     icon: '',
+    category: ItemCategory.ITEM,
+    flags: [],
     items: []
   });
   const [isItemListOpen, setIsItemListOpen] = useState(false);
@@ -39,7 +42,7 @@ export default function FF4FEShopClicker(): ReactElement {
       </div>
 
       <NoteContainer noteList={noteList} editNoteList={setNoteList} />
-      <div className="flex-1 max-w-[470px] flex flex-col items-center gap-6 h-5/6">
+      <div className="flex-1 max-w-[470px] h-5/6">
         <ItemTypeContainer
           setItemType={setCurrentItemType}
           openItemList={() => setIsItemListOpen(true)}
