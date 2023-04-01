@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
 import React, { ReactElement } from 'react';
-import NakuriFF4Inactive from '../assets/nakuri_i.png';
-import NakuriFF4Active from '../assets/nakuri_t.png';
-import FF4Border from '../assets/ff4-border.gif';
-import adjustLowFontsFonts from '../utility/adjust-low-fonts';
+import NakuriFF4Inactive from '../../assets/nakuri_i.png';
+import NakuriFF4Active from '../../assets/nakuri_t.png';
+import FF4Border from '../../assets/ff4-border.gif';
+import adjustLowFontsFonts from '../../utility/adjust-low-fonts';
 
 type Props = {
   setIsNoteClickerOpen(open: boolean): void;

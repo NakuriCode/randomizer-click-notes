@@ -1,11 +1,13 @@
 import React, { ReactElement, useState } from 'react';
 import NewWindow from 'react-new-window';
 import IntroText from '../components/intro-text';
-import FF4FEButton from '../components/ff4fe-button';
+import FF4FEButton from '../components/buttons/ff4fe-button';
 import FooterBanner from '../components/footer-banner';
 
 export default function StartPage(): ReactElement {
   const [isNoteClickerOpen, setIsNoteClickerOpen] = useState(false);
+
+  const isThinMode = localStorage.getItem('thinmode');
 
   return (
     <div className="bg-gradient-to-b from-gradient-gray-light to-gradient-gray-dark w-full h-full flex p-4 sm:p-20 items-center justify-center flex-col">
@@ -19,7 +21,7 @@ export default function StartPage(): ReactElement {
         <NewWindow
           url="/ff4fe-shop-clicker"
           title="FF4FE Shop Clicker"
-          features={{ width: 400, height: 700 }}
+          features={{ width: isThinMode === 'true' ? 300 : 400, height: 700 }}
           copyStyles
           onUnload={() => setIsNoteClickerOpen(false)}
         />

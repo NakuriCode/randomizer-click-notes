@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
-import { FF4ShopEntries } from '../data/ff4-shops';
-import { FF4Note } from '../types/ff4-types';
+import { FF4ShopEntries } from '../../data/ff4-shops';
+import { FF4Note } from '../../types/ff4-types';
 import short from 'short-uuid';
-import FF4Border from '../assets/ff4-border.png';
-import adjustLowFontsFonts from '../utility/adjust-low-fonts';
+import FF4Border from '../../assets/ff4-border.png';
+import adjustLowFontsFonts from '../../utility/adjust-low-fonts';
 
 type Props = {
   submitNoteEntry(newEntry: FF4Note): void;

@@ -1,10 +1,10 @@
 import React, { ReactElement, useState } from 'react';
-import { FF4ItemFormat, FF4Note } from '../types/ff4-types';
-import { Dimension } from '../types/generic';
+import { FF4ItemFormat, FF4Note } from '../../types/ff4-types';
+import { Dimension } from '../../types/generic';
 import ShopList from './shop-list';
 import short from 'short-uuid';
-import FF4Border from '../assets/ff4-border.png';
-import adjustLowFontsFonts from '../utility/adjust-low-fonts';
+import FF4Border from '../../assets/ff4-border.png';
+import adjustLowFontsFonts from '../../utility/adjust-low-fonts';
 
 type Props = {
   itemType: FF4ItemFormat;

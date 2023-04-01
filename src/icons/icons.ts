@@ -30,6 +30,7 @@ import HourglassIcon from '../assets/ff4-icons/icon_hourglass.png';
 import RemedyIcon from '../assets/ff4-icons/icon_remedy.png';
 import BuffIcon from '../assets/ff4-icons/icon_buff.png';
 import BombIcon from '../assets/ff4-icons/icon_bomb.png';
+import SettingsIcon from '../assets/icon_settings.png';
 
 export {
   PotionIcon,
@@ -63,5 +64,6 @@ export {
   HourglassIcon,
   BombIcon,
   BuffIcon,
-  RemedyIcon
+  RemedyIcon,
+  SettingsIcon
 };

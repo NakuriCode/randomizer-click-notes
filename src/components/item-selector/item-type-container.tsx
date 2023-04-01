@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
-import { FF4ItemData } from '../data/ff4-item-data';
-import { FF4ItemFormat } from '../types/ff4-types';
-import FF4Border from '../assets/ff4-border.png';
+import { FF4ItemData } from '../../data/ff4-item-data';
+import { FF4ItemFormat } from '../../types/ff4-types';
+import FF4Border from '../../assets/ff4-border.png';
 
 type Props = {
   setItemType(itemtype: FF4ItemFormat): void;
