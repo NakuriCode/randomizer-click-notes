@@ -20,7 +20,7 @@ export default function NoteContainer(props: Props): ReactElement {
   return (
     <div
       style={{ borderImage: `url(${FF4Border}) 30 stretch` }}
-      className="bg-ff4-blue text-white rounded border-4 border-gray-50 py-1 px-2 w-56 h-5/6"
+      className="bg-ff4-blue overflow-y-scroll scrollbar-thin scrollbar-thumb-[rgba(0,0,0,0.5)] text-white rounded border-4 border-gray-50 py-1 px-2 w-56 h-5/6"
     >
       <ul>
         {noteList.map((note) => (
