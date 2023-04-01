@@ -36,7 +36,7 @@ export default function FF4FEShopClicker(): ReactElement {
 
   return (
     <div className="bg-gradient-to-b from-gradient-gray-light to-gradient-gray-dark w-[screen] h-screen flex p-2 gap-2 flex-wrap items-start">
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 items-center flex-[1_1_100%]">
         <TrackerTitle />
         <SettingsButton editNoteList={setNoteList} />
       </div>

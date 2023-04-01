@@ -7,7 +7,7 @@ export default function IntroText(): ReactElement {
         Randomizer Note Clicker
       </h1>
       <p className="digital-disco font-bold text-green-500 max-[375px]:text-xl text-2xl sm:text-3xl text-center mb-4">
-        By Nakuri - v0.9
+        By Nakuri - v1.0
       </p>
       <p className="digital-disco text-white mb-8 text-lg sm:text-xl text-justify max-[375px]:hidden">
         Create quick little notes without the need of a keyboard. Just grab your mouse or use touch

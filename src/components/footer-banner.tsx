@@ -13,7 +13,7 @@ export default function FooterBanner(): ReactElement {
       </div>
 
       <p className="digital-disco font-bold text-red-400 text-[10px] mb-4 text-center sm:text-lg ">
-        Unsupported in v0.9: Safari, small mobile devices
+        Unsupported in v1.0: Safari, small mobile devices
       </p>
 
       <p className="digital-disco text-white text-lg sm:text-xl">

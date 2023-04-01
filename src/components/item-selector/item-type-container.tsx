@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import { FF4ItemData } from '../../data/ff4-item-data';
 import { FF4ItemFormat } from '../../types/ff4-types';
-import FF4Border from '../../assets/ff4-border.png';
 import { ItemCategory } from '../../types/enum/item-category';
+import ItemCategorySection from './item-category-section';
 
 type Props = {
   setItemType(itemtype: FF4ItemFormat): void;
@@ -22,45 +22,24 @@ export default function ItemTypeContainer(props: Props): ReactElement {
 
   return (
     <>
-      <p className="text-3xl text-white leading-[0.7] px-0.5">Items</p>
-      <div className="flex flex-wrap gap-2 justify-start mb-2">
-        {FF4ItemData.filter((item) => item.category === ItemCategory.ITEM).map((itemtype) => (
-          <div
-            style={{ borderImage: `url(${FF4Border}) 30 stretch` }}
-            className="bg-ff4-blue text-white rounded border-4 border-gray-50 flex items-center justify-center p-2 cursor-pointer"
-            onClick={(e) => initItemList(itemtype, e)}
-            title={itemtype.name}
-          >
-            <img className="w-4" src={itemtype.icon} />
-          </div>
-        ))}
-      </div>
-      <p className="text-3xl text-white leading-[0.7] px-0.5">Weapons</p>
-      <div className="flex flex-wrap gap-2 justify-start mb-2 ">
-        {FF4ItemData.filter((item) => item.category === ItemCategory.WEAPON).map((itemtype) => (
-          <div
-            style={{ borderImage: `url(${FF4Border}) 30 stretch` }}
-            className="bg-ff4-blue text-white rounded border-4 border-gray-50 flex items-center justify-center p-2 cursor-pointer"
-            onClick={(e) => initItemList(itemtype, e)}
-            title={itemtype.name}
-          >
-            <img className="w-4" src={itemtype.icon} />
-          </div>
-        ))}
-      </div>
-      <p className="text-3xl text-white leading-[0.7] px-0.5">Armor</p>
-      <div className="flex flex-wrap gap-2 justify-start mb-2">
-        {FF4ItemData.filter((item) => item.category === ItemCategory.ARMOR).map((itemtype) => (
-          <div
-            style={{ borderImage: `url(${FF4Border}) 30 stretch` }}
-            className="bg-ff4-blue text-white rounded border-4 border-gray-50 flex items-center justify-center p-2 cursor-pointer"
-            onClick={(e) => initItemList(itemtype, e)}
-            title={itemtype.name}
-          >
-            <img className="w-4" src={itemtype.icon} />
-          </div>
-        ))}
-      </div>
+      <ItemCategorySection
+        categoryName="Items"
+        itemCategory={ItemCategory.ITEM}
+        initItemList={initItemList}
+        itemData={FF4ItemData}
+      />
+      <ItemCategorySection
+        categoryName="Weapons"
+        itemCategory={ItemCategory.WEAPON}
+        initItemList={initItemList}
+        itemData={FF4ItemData}
+      />
+      <ItemCategorySection
+        categoryName="Armor"
+        itemCategory={ItemCategory.ARMOR}
+        initItemList={initItemList}
+        itemData={FF4ItemData}
+      />
     </>
   );
 }

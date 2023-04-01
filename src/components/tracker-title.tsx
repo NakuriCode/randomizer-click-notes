@@ -19,7 +19,7 @@ export default function TrackerTitle(): ReactElement {
           'lg'
         )} absolute -bottom-[26px] left-0 mx-1 text-2xl text-green-800 uppercase`}
       >
-        v0.9 By Nakuri
+        v1.0 By Nakuri
       </span>
     </div>
   );
