@@ -11,13 +11,13 @@ export default function TrackerTitle(): ReactElement {
       style={{ borderImage: `url(${FF4Border}) 30 stretch` }}
       className={`relative bg-ff4-blue ${
         isThinMode ? 'text-[32px]' : 'text-[42px]'
-      } uppercase text-white border-4 border-solid border-transparent leading-[1] p-1 w-full h-min text-center flex-[0_0_100%]`}
+      } uppercase text-white border-4 border-solid border-transparent leading-[0.6] p-1 w-full h-min text-center`}
     >
       <p className={adjustLowFontsFonts('lg')}>FF4FE Shop Note Clicker</p>
       <span
         className={`${adjustLowFontsFonts(
           'lg'
-        )} absolute -bottom-[13px] right-0 mx-1 text-2xl text-green-500 uppercase`}
+        )} absolute -bottom-[26px] left-0 mx-1 text-2xl text-green-800 uppercase`}
       >
         v0.9 By Nakuri
       </span>
