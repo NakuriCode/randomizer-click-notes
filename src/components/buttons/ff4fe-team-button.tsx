@@ -9,7 +9,7 @@ type Props = {
   setIsNoteClickerOpen(open: boolean): void;
 };
 
-export default function FF4FEButton(props: Props): ReactElement {
+export default function FF4FETeamButton(props: Props): ReactElement {
   const { setIsNoteClickerOpen } = props;
 
   function handleClick(): void {
@@ -26,7 +26,7 @@ export default function FF4FEButton(props: Props): ReactElement {
         onClick={() => handleClick()}
         className="bg-ff4-blue transition-colors text-white rounded border-[5px] border-gray-50 p-1 cursor-pointer max-[375px]:text-3xl text-4xl uppercase text-center group-hover:bg-ff4-blue-light"
       >
-        <p className={adjustLowFontsFonts('sm')}>FF4FE Shop Note Clicker</p>
+        <p className={adjustLowFontsFonts('sm')}>FF4FE Team Building Clicker</p>
       </div>
     </div>
   );

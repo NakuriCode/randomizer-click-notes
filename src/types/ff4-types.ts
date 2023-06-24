@@ -16,3 +16,12 @@ export type FF4Note = {
   name: string;
   shop: { name: string; color: string };
 };
+
+export type FF4Character = {
+  id: string;
+  name: string;
+  sprite: string;
+  value: number;
+};
+
+export type FF4Party = FF4Character[];
